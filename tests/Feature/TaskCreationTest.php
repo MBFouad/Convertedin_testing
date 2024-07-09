@@ -4,12 +4,19 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Artisan;
 use Tests\TestCase;
 use App\Models\Task;
 use App\Models\User;
 
 class TaskCreationTest extends TestCase
 {
+    protected function setUp(): void
+    {
+        parent::setUp();
+        // Run the database migrations
+        Artisan::call('migrate');
+    }
     /** @test */
     public function it_creates_a_task(): void
     {
