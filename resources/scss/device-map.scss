@@ -1,0 +1,40 @@
+@import "~leaflet/dist/leaflet";
+@import "~chosen/chosen";
+
+#mapid {
+    min-height: 800px;
+    //width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .li-0:before, .li-1:before, .li-2:before, .li-3:before {
+        content: "";
+        margin-right: 10px;
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        background-color: #14CCBB;
+        border-radius: 50%;
+        margin-bottom: 2px;
+    }
+
+    .li-0:before {
+        background-color: yellow;
+    }
+
+    .li-1:before {
+        background-color: green;
+    }
+
+    .li-2:before {
+        background-color: red;
+    }
+
+    .li-3:before {
+        background-color: orange;
+    }
+}

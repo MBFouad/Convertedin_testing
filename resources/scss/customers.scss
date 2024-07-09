@@ -1,0 +1,42 @@
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .li-0, .li-1, .li-2, .li-no-distribution{
+
+  }
+
+  .li-0:before, .li-1:before, .li-2:before, .li-no-distribution:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: #14CCBB;
+    border-radius: 50%;
+    margin-bottom: 2px;
+  }
+
+  .li-0:before {
+    background-color: yellow;
+  }
+
+  .li-1:before {
+    background-color: green;
+  }
+
+  .li-2:before {
+    background-color: red;
+  }
+
+  .li-no-distribution:before {
+    background-color: grey;
+  }
+
+}
+
+.float-e-margins .btn {
+  padding: 6px 10px;
+}

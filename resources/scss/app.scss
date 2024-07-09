@@ -1,0 +1,21 @@
+@import "main";
+
+
+.ac_unit_image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.thumbnail {
+    .ac_image {
+        text-align: center;
+
+        .ac_unit_image {
+            max-width: 290px;
+        }
+    }
+}
+
+.select2-container--open {
+    z-index: 3000 !important;
+}
