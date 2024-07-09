@@ -48,7 +48,7 @@ jobs:
       run: php artisan key:generate
 
     - name: Create database
-      run: mysql --user=root --password=root --host=127.0.0.1 --execute="CREATE DATABASE IF NOT EXISTS Convertedin_testing;"
+      run: mysql --user=root --password=password --host=127.0.0.1 --execute="CREATE DATABASE IF NOT EXISTS Convertedin_testing;"
 
     - name: Run migrations
       run: php artisan migrate --force
