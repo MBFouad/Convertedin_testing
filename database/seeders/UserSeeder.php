@@ -15,6 +15,6 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::factory()->withRole(Constants::USER_ROLE['USER'])->count(10)->create();
+        User::factory()->withRole(Constants::USER_ROLE['USER'])->count(1000)->create();
     }
 }

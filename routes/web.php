@@ -55,10 +55,7 @@ use App\Http\Controllers\Auth\AccountActivateController;
 use App\Utilities\Constants;
 
 Route::group(['middleware' => 'auth'], static function () {
-        Route::get('/', function () {
-            $registration_token = Str::random(32);
-            return view('auth/checkSerialNumber', compact('registration_token'));
-        });
+        Route::get('/', [HomeController::class, 'tasks'])->name('home');
         Route::get('/logout', [AuthenticatedSessionController::class, 'destroy']);
         Route::get('/home', [HomeController::class, 'tasks'])->name('home');
         Route::get('/statistics', [HomeController::class, 'statistics'])->name('statistics');
